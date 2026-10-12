@@ -161,7 +161,7 @@ export default function App() {
                 alt="Nicole Okolie seated on a television studio set"
                 className="h-full w-full object-cover object-[center_42%]"
                 fetchPriority="high"
-                src="/nicole/nicole-okolie-headshot.jpg"
+                src="/nicole/nicole-okolie-headshot.jpg?v=2"
               />
               <figcaption className="absolute right-0 bottom-0 left-0 bg-[#171713]/85 px-3 py-2 text-[9px] font-bold tracking-[0.14em] text-white uppercase backdrop-blur-sm">
                 Content creator / Strategist
@@ -245,7 +245,7 @@ export default function App() {
             <img
               alt="Behind the scenes of Nicole's studio production work"
               className="absolute inset-0 h-full w-full object-cover"
-              src="/nicole/studio-production-02.jpg"
+              src="/nicole/studio-production-02.jpg?v=2"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
             <p className="absolute bottom-7 left-7 text-xs font-bold tracking-[0.15em] uppercase md:bottom-10 md:left-10">
@@ -304,9 +304,9 @@ export default function App() {
             </div>
             <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
               {[
-                ["/nicole/creator-profile.jpg", "Social content profile"],
-                ["/nicole/top-posts.jpg", "Top-performing posts"],
-                ["/nicole/performance-60-days.jpg", "60-day performance"],
+                ["/nicole/creator-profile.jpg?v=2", "Social content profile"],
+                ["/nicole/top-posts.jpg?v=2", "Top-performing posts"],
+                ["/nicole/performance-60-days.jpg?v=2", "60-day performance"],
               ].map(([src, alt], index) => (
                 <figure
                   className={`overflow-hidden bg-black ${
