@@ -1,1 +1,10 @@
-{}
+{
+  "description": "Create a professional portfolio website showcasing your CV and personal information to effectively present your skills and experience online.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
