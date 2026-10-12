@@ -2,28 +2,68 @@ const experience = [
   {
     company: "Amora",
     role: "Content Creator / Creative Content Strategist",
+    date: "Sep 2025 — Present",
+    summary:
+      "Develops relationship, dating and lifestyle content from audience research and ideation through scripting, production, editing, publishing and performance review.",
     number: "01",
   },
   {
     company: "Oxygen Films",
     role: "Assistant Video Editor / Production Assistant",
+    date: "Sep 2023 — Aug 2024",
+    summary:
+      "Supported film, corporate and event productions across content capture, production logistics and post-production, shaping raw footage into polished visual stories.",
     number: "02",
   },
   {
     company: "Marketing Edge",
     role: "Story Writer / Content Writer",
+    date: "Sep 2022 — Aug 2023",
+    summary:
+      "Researched and wrote timely stories on marketing, advertising, brands and business, translating interviews and industry events into compelling editorial content.",
     number: "03",
   },
   {
     company: "LoveWorld Plus (LXP)",
     role: "Content Creator / TV Host / Scriptwriter",
+    date: "Sep 2021 — Aug 2022",
+    summary:
+      "Conceptualised and delivered a 20-episode television programme while writing scripts and promotional copy, hosting on screen and coordinating production.",
     number: "04",
   },
   {
     company: "Benson Idahosa University",
     role: "Editor-in-Chief · Mass Communication Department",
+    date: "2023",
+    summary:
+      "Led editorial planning, commissioned and edited student-focused stories, coordinated contributors and maintained a consistent publishing workflow.",
     number: "05",
   },
+];
+
+const expertise = [
+  "Content ideation",
+  "Creative concept development",
+  "Social media content",
+  "Content writing",
+  "Copywriting",
+  "Scriptwriting",
+  "Short-form video",
+  "Video editing",
+  "Carousel concepts",
+  "Brand storytelling",
+  "Content strategy",
+  "Hooks & captions",
+  "Audience research",
+  "Content optimization",
+  "Performance analysis",
+];
+
+const certifications = [
+  ["Content Marketing", "HubSpot Academy"],
+  ["Social Media Marketing", "HubSpot Academy"],
+  ["Fundamentals of Digital Marketing", "Google"],
+  ["Content Marketing", "Semrush Academy"],
 ];
 
 const work = [
@@ -89,6 +129,13 @@ export default function App() {
             <a className="nav-link" href="#experience">
               Experience
             </a>
+            <a
+              className="nav-link"
+              href="/nicole/nicole-okolie-cv.pdf"
+              target="_blank"
+            >
+              CV
+            </a>
           </div>
           <a
             className="group flex items-center gap-2 border-b border-black pb-1 text-xs font-semibold tracking-[0.14em] uppercase"
@@ -130,15 +177,24 @@ export default function App() {
                 crafting thoughtful stories across digital, television and
                 editorial platforms.
               </p>
-              <a
-                className="group flex w-fit items-center gap-4 text-sm font-bold tracking-[0.12em] uppercase"
-                href="#work"
-              >
-                Explore selected work
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#d95735] text-white">
-                  <ArrowIcon />
-                </span>
-              </a>
+              <div className="flex flex-wrap items-center gap-7">
+                <a
+                  className="nav-link text-xs font-bold tracking-[0.14em] uppercase"
+                  href="/nicole/nicole-okolie-cv.pdf"
+                  target="_blank"
+                >
+                  Download CV
+                </a>
+                <a
+                  className="group flex w-fit items-center gap-4 text-sm font-bold tracking-[0.12em] uppercase"
+                  href="#work"
+                >
+                  Explore work
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#d95735] text-white">
+                    <ArrowIcon />
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -158,14 +214,104 @@ export default function App() {
           </h2>
           <div className="mt-12 grid gap-8 border-t border-black/15 pt-8 md:grid-cols-2">
             <p className="text-lg leading-relaxed">
-              I create clear, engaging content that helps people understand a
-              message, feel its relevance and remember it.
+              I develop ideas and turn them into engaging written, visual and
+              video content that helps people understand a message, feel its
+              relevance and remember it.
             </p>
             <p className="leading-relaxed text-black/60">
-              My experience moves fluidly between content strategy, editorial
-              writing, scriptwriting, production and presenting—giving me a
-              well-rounded view of how strong stories come to life.
+              From research and creative development to scripting, production,
+              editing, publishing and performance review, I understand the
+              full content journey—and how to adapt a strong idea across social
+              formats.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#d95735] text-[#fffaf1]">
+        <div className="mx-auto grid max-w-[1440px] lg:grid-cols-2">
+          <div className="relative min-h-[570px] overflow-hidden lg:min-h-[780px]">
+            <img
+              alt="Behind the scenes of Nicole's studio production work"
+              className="absolute inset-0 h-full w-full object-cover"
+              src="/nicole/studio-production-02.jpg"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+            <p className="absolute bottom-7 left-7 text-xs font-bold tracking-[0.15em] uppercase md:bottom-10 md:left-10">
+              Behind the scenes / Production
+            </p>
+          </div>
+          <div className="flex flex-col justify-between px-6 py-16 md:px-12 md:py-20 lg:px-16">
+            <div>
+              <p className="section-label text-white/70">Impact in numbers</p>
+              <h2 className="font-display mt-6 text-5xl leading-[0.95] tracking-[-0.04em] md:text-7xl">
+                Content that earns attention.
+              </h2>
+            </div>
+            <div className="mt-16">
+              <div className="grid grid-cols-2 border-t border-white/35">
+                {[
+                  ["11.8M", "Post views"],
+                  ["493.4K", "Likes"],
+                  ["5.2M", "Total viewers"],
+                  ["4.5M", "New viewers"],
+                ].map(([value, label]) => (
+                  <div
+                    className="border-b border-white/35 py-6 odd:border-r odd:pr-5 even:pl-5 md:py-8"
+                    key={label}
+                  >
+                    <strong className="font-display block text-4xl font-normal tracking-tight md:text-6xl">
+                      {value}
+                    </strong>
+                    <span className="mt-2 block text-xs font-bold tracking-[0.14em] text-white/65 uppercase">
+                      {label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-7 max-w-lg text-sm leading-relaxed text-white/70">
+                Organic social performance includes 8.8M views in 60 days and
+                multiple posts reaching six- and seven-figure audiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#1b1b17] px-6 py-24 text-[#f2efe8] md:px-12 md:py-32 lg:px-16">
+        <div className="mx-auto max-w-[1440px]">
+          <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
+            <div>
+              <p className="section-label text-white/50">The proof</p>
+              <h2 className="font-display mt-5 max-w-sm text-5xl leading-none tracking-[-0.04em] md:text-6xl">
+                Built for the scroll.
+              </h2>
+              <p className="mt-7 max-w-sm leading-relaxed text-white/50">
+                Audience-led ideas, sharp hooks and continuous performance
+                review turned social storytelling into sustained reach.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+              {[
+                ["/nicole/creator-profile.jpg", "Social content profile"],
+                ["/nicole/top-posts.jpg", "Top-performing posts"],
+                ["/nicole/performance-60-days.jpg", "60-day performance"],
+              ].map(([src, alt], index) => (
+                <figure
+                  className={`overflow-hidden bg-black ${
+                    index === 2 ? "col-span-2 md:col-span-1" : ""
+                  }`}
+                  key={src}
+                >
+                  <img
+                    alt={alt}
+                    className="h-full w-full object-cover object-top transition-transform duration-500 hover:scale-[1.02]"
+                    loading="lazy"
+                    src={src}
+                  />
+                </figure>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -233,18 +379,86 @@ export default function App() {
           <div className="border-t border-black">
             {experience.map((item) => (
               <div
-                className="group grid gap-2 border-b border-black/20 py-7 transition-colors md:grid-cols-[60px_1fr_1.2fr] md:items-center md:py-8"
+                className="group grid gap-x-5 gap-y-3 border-b border-black/20 py-7 transition-colors md:grid-cols-[45px_1fr_1.35fr] md:py-9"
                 key={item.company}
               >
-                <span className="text-xs text-black/35">{item.number}</span>
-                <h3 className="font-display text-2xl tracking-tight transition-transform duration-300 group-hover:translate-x-1">
-                  {item.company}
-                </h3>
-                <p className="text-sm leading-relaxed text-black/55 md:text-right">
-                  {item.role}
-                </p>
+                <span className="text-xs text-black/35 md:pt-1">
+                  {item.number}
+                </span>
+                <div>
+                  <h3 className="font-display text-2xl tracking-tight transition-transform duration-300 group-hover:translate-x-1 md:text-3xl">
+                    {item.company}
+                  </h3>
+                  <p className="mt-1 text-[11px] font-bold tracking-[0.12em] text-[#d95735] uppercase">
+                    {item.date}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold">{item.role}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-black/50">
+                    {item.summary}
+                  </p>
+                </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-black/15 bg-[#ded7c9] px-6 py-24 md:px-12 md:py-32 lg:px-16">
+        <div className="mx-auto max-w-[1440px]">
+          <div className="grid gap-16 lg:grid-cols-2">
+            <div>
+              <p className="section-label">04 / Creative toolkit</p>
+              <h2 className="font-display mt-5 text-5xl tracking-[-0.04em] md:text-7xl">
+                From idea to impact.
+              </h2>
+              <div className="mt-12 flex flex-wrap gap-2">
+                {expertise.map((skill) => (
+                  <span
+                    className="rounded-full border border-black/25 px-4 py-2.5 text-xs font-semibold"
+                    key={skill}
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+              <p className="mt-10 max-w-lg text-sm leading-relaxed text-black/55">
+                Comfortable across social platforms, video and graphic editing
+                software, content management tools, analytics, SEO, digital
+                research, voiceover and audio production.
+              </p>
+            </div>
+
+            <div className="grid content-start gap-12 md:grid-cols-2 lg:pt-20">
+              <div>
+                <p className="section-label mb-6">Education</p>
+                <div className="border-t border-black pt-5">
+                  <h3 className="font-display text-3xl leading-tight">
+                    B.Sc. Mass Communication
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-black/55">
+                    Benson Idahosa University
+                    <br />
+                    2019 — 2023
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="section-label mb-6">Certifications</p>
+                <div className="border-t border-black">
+                  {certifications.map(([name, issuer]) => (
+                    <div
+                      className="border-b border-black/20 py-4"
+                      key={`${name}-${issuer}`}
+                    >
+                      <p className="text-sm font-semibold">{name}</p>
+                      <p className="mt-1 text-xs text-black/50">{issuer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
