@@ -1,5 +1,9 @@
 {
+  "title": "Nicole Okolie | Portfolio",
   "description": "Create a professional portfolio website showcasing your CV and personal information to effectively present your skills and experience online.",
+  "icons": {
+    "icon": "/favicon.svg"
+  },
   "robots": {
     "index": false
   },
