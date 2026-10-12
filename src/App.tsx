@@ -150,13 +150,24 @@ export default function App() {
           className="relative z-[1] mx-auto flex min-h-[calc(100vh-92px)] max-w-[1440px] flex-col justify-end px-6 pb-10 md:px-12 md:pb-12 lg:px-16"
           id="top"
         >
-          <div className="mb-auto flex items-start justify-between pt-[10vh]">
+          <div className="mb-auto grid w-full items-start gap-6 pt-[5vh] md:grid-cols-[1fr_auto_1fr]">
             <p className="max-w-[240px] text-xs leading-relaxed font-semibold tracking-[0.15em] uppercase">
               Creating stories that move
               <br />
               people & shape culture
             </p>
-            <div className="hidden h-24 w-24 items-center justify-center rounded-full border border-black/25 text-center text-[10px] leading-tight font-semibold tracking-[0.15em] uppercase md:flex">
+            <figure className="relative ml-auto h-[32vh] min-h-[245px] w-[185px] overflow-hidden border-[6px] border-white shadow-[0_18px_50px_rgba(23,23,19,0.16)] md:mx-auto md:h-[38vh] md:min-h-[290px] md:w-[230px]">
+              <img
+                alt="Nicole Okolie seated on a television studio set"
+                className="h-full w-full object-cover object-[center_42%]"
+                fetchPriority="high"
+                src="/nicole/nicole-okolie-headshot.jpg"
+              />
+              <figcaption className="absolute right-0 bottom-0 left-0 bg-[#171713]/85 px-3 py-2 text-[9px] font-bold tracking-[0.14em] text-white uppercase backdrop-blur-sm">
+                Content creator / Strategist
+              </figcaption>
+            </figure>
+            <div className="hidden h-24 w-24 items-center justify-center justify-self-end rounded-full border border-black/25 text-center text-[10px] leading-tight font-semibold tracking-[0.15em] uppercase md:flex">
               Based in
               <br />
               Nigeria
