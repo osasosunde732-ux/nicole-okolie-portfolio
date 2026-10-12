@@ -232,7 +232,7 @@ export default function App() {
             <p className="leading-relaxed text-black/60">
               From research and creative development to scripting, production,
               editing, publishing and performance review, I understand the
-              full content journey—and how to adapt a strong idea across social
+              full content journey and how to adapt a strong idea across social
               formats.
             </p>
           </div>
